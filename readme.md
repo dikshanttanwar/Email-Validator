@@ -1,0 +1,1 @@
+This is an Email Validator app in which you can check that your Email is valid or not.

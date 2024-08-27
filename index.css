@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins","sans-serif";
+}
+body{
+    height:100%;
+    width:100%;
+    background-color: #111820;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap:10px;
+    padding-top: 1vw;
+    padding-bottom: 4vw;
+}
+.inputs{
+    display: flex;
+    gap:20px;
+}
+.buttons{
+    display: flex;
+    gap:10px;
+}
+h1{
+    color:white;
+    font-size: 3vw;
+    font-weight: 700;
+    margin-bottom: -16px;
+}
+h1 span{
+    color:#f3a94e;
+}
+h2{
+    color:white;
+    font-size: 1.4vw;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.input-field{
+    position:relative;
+}
+.input-field input{
+    width:25vw;
+    height:30px;
+    padding:20px 10px;
+    font-size: 1.05rem;
+    border-radius: 6px;
+    border:1px solid white;
+    outline:none;
+    background-color: transparent;
+    color:white;
+}
+.input-field label{
+    position:absolute;
+    top:50%;
+    left:15px;
+    transform: translateY(-50%);
+    color:white;
+    pointer-events: none;
+    transition:0.3s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top:0%;
+    padding:0 10px;
+    font-size: 0.8rem;
+    background-color: #111820;
+}
+.inputs button {
+    width: 7vw;
+    /* border: 1px solid #f3a94e; */
+    border:none;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2vw;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+.inputs button:hover {
+    background: #f3a94e;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+table, td, th{
+    margin-top: 20px;
+    color:white;
+    border:1px solid white;
+    border-collapse: collapse;
+    width:600px;
+    padding:10px 20px;
+}
+.thead{
+    font-size: 1.2rem;
+}
+.dataContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+#svg{
+    top:-15px;
+    left:170px;
+    position: absolute;
+    width:60px;
+}
+#resulth2{
+    position: relative;
+    font-size: 1.3rem;
+    /* text-align: left; */
+    margin-top: 20px;
+}
+
+@media screen and (max-width:700px){
+    .container{
+        margin-top: 30px;
+    }
+    h1{
+        font-size: 8vw;
+        margin-bottom: -10px;
+    }
+    h2{
+        font-size: 3vw;
+        margin-bottom: 10px;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons{
+        align-items: center;
+        justify-content: center;
+    }
+    .input-field input{
+        width:70vw;
+        height:30px;
+        padding:20px 10px;
+        font-size: 1.05rem;
+        border-radius: 6px;
+        border:1px solid white;
+        outline:none;
+        background-color: transparent;
+        color:white;
+    }
+    .inputs button {
+        width: 20vw;
+        height:5vw;
+        /* border: 1px solid #f3a94e; */
+        border:none;
+        border-radius: 45px;
+        transition: all 0.3s;
+        cursor: pointer;
+        background: white;
+        font-size: 3vw;
+        font-weight: 550;
+        font-family: 'Montserrat', sans-serif;
+      }
+    .inputs button:hover {
+        background: #f3a94e;
+        color: white;
+        font-size: 3.1vw;
+    }
+    .dataContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+    table, td, th{
+        margin-top: 20px;
+        color:white;
+        border:1px solid white;
+        border-collapse: collapse;
+        width:80vw;
+        padding:5px 10px;
+        font-size: 3vw;
+    }
+    .thead{
+        font-size: 4vw;
+    }
+}
