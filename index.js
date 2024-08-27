@@ -36,9 +36,9 @@ btn.addEventListener("click",async (e)=>{
                 <img id="svg" src="Spinner@1x-1.0s-200px-200px.svg" alt="">
             </h2>
         `
-        // let url = `https://api.emailvalidation.io/v1/info?apikey=${apiKey}&email=${email}`;
-        // let res = await fetch(url)
-        // let result = await res.json();
+        let url = `https://api.emailvalidation.io/v1/info?apikey=${apiKey}&email=${email}`;
+        let res = await fetch(url)
+        let result = await res.json();
         container.innerHTML = ``;
         let table = document.createElement("table");
         container.appendChild(table);
